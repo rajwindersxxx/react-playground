@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.button {
+  @apply bg-blue-600 rounded-md px-4 py-2 hover:bg-blue-700 transition-all;
+}
+.button-sec {
+  @apply border border-blue-50 rounded-md px-4 py-2 hover:bg-blue-500 transition-all;
+}
+
+.test {
+  box-shadow: 0 24px 24px 4000px rgba(0, 0, 0, 0.8);
+  width: 90%;
+}
