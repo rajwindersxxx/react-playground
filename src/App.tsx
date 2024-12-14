@@ -2,6 +2,7 @@ import { Card } from './Card';
 import Gallery from './Gallery';
 import Hero from './Hero';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Logo from './Logo';
 
 export default function App() {
   return (
@@ -14,6 +15,7 @@ export default function App() {
             <Route path="message" element={<h1>form submitted</h1>} />
           </Route>
         </Routes>
+        <Logo/>
       </BrowserRouter>
     </div>
   );

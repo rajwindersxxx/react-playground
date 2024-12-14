@@ -1,14 +1,13 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import Logo from './Logo';
 
 export function Nav() {
   const [isNavOpen, setNavOpen] = useState(false);
   return (
     <nav className="w-full bg-blue-900 relative z-10">
       <div className="  flex justify-between items-center mx-4 lg:container lg:m-auto">
-        <div className="font-serif text-2xl bg-blue-950 text-white p-2 ">
-          DevTiven
-        </div>
+    <Logo/>
         <ul className={`absolute top-12 left-0 w-full bg-blue-500 text-center md:relative md:w-auto md:bg-transparent md:flex gap-4 md:border-b-0 md:top-0 ${isNavOpen ? 'hidden': ''}`} >
           <li>
             <Link
